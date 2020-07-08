@@ -11,6 +11,7 @@ public class ControllerBasic {
     @GetMapping(path ={"/saludar", "/holamundo"})
     public String saludar(Model model){
     	model.addAttribute("name", "el modelo");
+        System.out.println("Come calzon");
         return "index";
     }
 }
